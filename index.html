@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>My Todo List</title>
+  <meta name="author" content="Michael Borck">
+  <meta name="description" content="Explore flatland and interact with its inhabitants">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+
+<body>
+
+  <h1>My Todo List</h1>
+
+  <form>
+    <label>
+      Task Name: <input id="task-input" type="text" placeholder="Do assignment">
+    </label>
+    <button type="button" id="add-task">
+      Add Task
+    </button>
+  </form>
+
+  <ul id="todo-list"></ul>
+
+  <script type="text/template" id="list-item-template">
+    <li class="task">
+      <label>
+        <input class="checkbox" type="checkbox">
+        <span class="task-name"><!-- TASK_NAME --></span>
+      </label>
+    </li>
+  </script>
+
+  <button type="button" id="show-all">All</button>
+  <button type="button" id="show-active">Active</button>
+  <button type="button" id="show-completed">Completed</button>
+
+  <script src="js/script2.js"></script>
+</body>
+
+</html>
